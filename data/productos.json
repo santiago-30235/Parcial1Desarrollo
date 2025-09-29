@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "GTA V",
+    "descripcion": "Mundo abierto",
+    "precio": "$280000",
+    "imagen": "imagenes/gta.jpg"
+  },
+  {
+    "nombre": "Mario Kart",
+    "descripcion": "Carreras divertidas",
+    "precio": "$150000",
+    "imagen": "imagenes/mario.jpg"
+  },
+  {
+    "nombre": "Mortal Kombat",
+    "descripcion": "Juego de peleas",
+    "precio": "$220000",
+    "imagen": "imagenes/mk.jpg"
+  }
+]
