@@ -1,5 +1,4 @@
-
-/* Fondo general */
+/* ---------------------- Body general ---------------------- */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,7 +6,7 @@ body {
   color: #eee;
 }
 
-/* Hero más gamer */
+/* ---------------------- Hero ---------------------- */
 .hero {
   text-align: center;
   padding: 70px 20px;
@@ -16,20 +15,9 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
-}
-
-.hero p {
-  font-size: 1.2rem;
-  color: #f4f4f4;
-}
-
-
-.hero h1 {
   font-size: 2.2rem;
   margin-bottom: 10px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
 .hero p {
@@ -37,7 +25,7 @@ body {
   color: #ddd;
 }
 
-/* --- Catálogo --- */
+/* ---------------------- Catálogo ---------------------- */
 #catalogo {
   text-align: center;
   padding: 30px 20px;
@@ -49,60 +37,7 @@ body {
   color: #f4f2f2;
 }
 
-/* --- Tarjetas de productos --- */
-.card {
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 10px;
-  width: 220px;
-  text-align: center;
-  background: white;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.card h3 {
-  margin: 10px 0 5px;
-}
-
-.card p {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.price {
-  font-weight: bold;
-  color: green;
-  margin: 8px 0;
-}
-
-.buy-btn {
-  background: #222;
-  color: white;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.buy-btn:hover {
-  background: #ffcc00;
-  color: #222;
-}
-
-/* --- Contenedor de catálogo --- */
+/* Contenedor de tarjetas (Shadow DOM dentro de cada <product-card>) */
 .contenedor {
   display: flex;
   flex-wrap: wrap;
@@ -110,21 +45,18 @@ body {
   gap: 20px;
 }
 
-/* --- FONDO DEL LOGIN --- */
+/* ---------------------- Login ---------------------- */
 .login-body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-
-  /* Imagen gamer de fondo */
-  background: url("imagenes/fondo-gamer.jpg") no-repeat center center/cover;
+  background: url("../imagenes/fondo-gamer.jpg") no-repeat center center/cover;
 }
 
-/* --- Caja de login --- */
 .login-box {
-  background: rgba(255, 255, 255, 0.9); /* semi-transparente */
+  background: rgba(255, 255, 255, 0.9);
   padding: 25px;
   border-radius: 10px;
   text-align: center;
@@ -135,10 +67,9 @@ body {
 .login-box h2 {
   margin-bottom: 15px;
   font-size: 1.3rem;
-  color: #111; /* título negro */
+  color: #111;
 }
 
-/* Inputs y botones */
 .login-box input {
   width: 90%;
   margin: 8px 0;
@@ -164,17 +95,16 @@ body {
   background: #ffcc00;
   color: #111;
 }
-/* Texto de ayuda en el login (credenciales) */
+
 .login-box small {
   display: block;
   margin-top: 10px;
   font-size: 0.9rem;
-  color: #111;       /* Negro fuerte */
-  font-weight: bold; /* Negrilla */
+  color: #111;
+  font-weight: bold;
 }
 
-
-/* --- HEADER --- */
+/* ---------------------- Header y Navegación ---------------------- */
 .main-header {
   background: #111;
   color: white;
@@ -201,4 +131,49 @@ body {
 
 .nav-box a:hover {
   color: #ffcc00;
+}
+
+.sidebar {
+  position: fixed;      /* Fijo en la pantalla */
+  top: 100px;           /* Ajusta según tu header */
+  left: 0;
+  width: 200px;
+  background: #111;
+  padding: 20px;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ffcc00;
+}
+
+/* ---------------------- Footer ---------------------- */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
 }
