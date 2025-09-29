@@ -3,18 +3,18 @@
     "nombre": "GTA V",
     "descripcion": "Mundo abierto",
     "precio": "$280000",
-    "imagen": "imagenes/gta.jpg"
+    "imagen": "imagenes/Grand Theft Auto V.webp"
   },
   {
     "nombre": "Mario Kart",
     "descripcion": "Carreras divertidas",
     "precio": "$150000",
-    "imagen": "imagenes/mario.jpg"
+    "imagen": "imagenes/Mario Kart 8.jpg"
   },
   {
     "nombre": "Mortal Kombat",
     "descripcion": "Juego de peleas",
     "precio": "$220000",
-    "imagen": "imagenes/mk.jpg"
+    "imagen": "imagenes/Mortal Kombat 11.webp"
   }
 ]
