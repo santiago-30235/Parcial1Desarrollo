@@ -1,0 +1,204 @@
+
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1a1a1d, #2e2e33);
+  color: #eee;
+}
+
+/* Hero más gamer */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #f4f4f4;
+}
+
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* --- Catálogo --- */
+#catalogo {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+#catalogo h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #f4f2f2;
+}
+
+/* --- Tarjetas de productos --- */
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  background: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.price {
+  font-weight: bold;
+  color: green;
+  margin: 8px 0;
+}
+
+.buy-btn {
+  background: #222;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: #ffcc00;
+  color: #222;
+}
+
+/* --- Contenedor de catálogo --- */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* --- FONDO DEL LOGIN --- */
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+  /* Imagen gamer de fondo */
+  background: url("imagenes/fondo-gamer.jpg") no-repeat center center/cover;
+}
+
+/* --- Caja de login --- */
+.login-box {
+  background: rgba(255, 255, 255, 0.9); /* semi-transparente */
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.login-box h2 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #111; /* título negro */
+}
+
+/* Inputs y botones */
+.login-box input {
+  width: 90%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.login-box button {
+  width: 95%;
+  padding: 10px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #ffcc00;
+  color: #111;
+}
+/* Texto de ayuda en el login (credenciales) */
+.login-box small {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #111;       /* Negro fuerte */
+  font-weight: bold; /* Negrilla */
+}
+
+
+/* --- HEADER --- */
+.main-header {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.nav-box {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #222;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.nav-box a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-box a:hover {
+  color: #ffcc00;
+}
